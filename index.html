@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html>
-<script language="javascript">
-function pasuser(form) { 
-if (form.id.value=="urmom") { 
-if (form.pass.value==("urdad") { location="http://YOURDOMAIN.com/" } 
-else { alert("Wrong Password") } 
+<SCRIPT language="JavaScript">
+var password; 
+var pass1="SECRET_PASSWORD"; 
+password=prompt('Enter Password',' '); 
+if (password==pass1) 
+alert('Correct Password! Click OK to Enter!'); 
+else { window.location="http://YOURDOMAIN.com/"; 
 } 
-else { alert("Wrong Username") } 
-} 
-</script>
-<form name="login">
-<input name="id" size="6" type="text">
-<input name="pass" size="6" type="password">
-<input value="Login" onclick="pasuser(this.form)" type="button">
-</form>
+</SCRIPT>
 <p>
 chrome-extension://haldlgldplgnggkjaafhelgiaglafanh/manifest.json
 </p>
