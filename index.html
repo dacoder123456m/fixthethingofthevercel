@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
-<script>
-function run(){
-var password = prompt("Password Please");
-//Change to your own Password
-if(password != 'Sameer'){
-document.body.innerHTML = '';
-document.body.innerHTML = 'Password Failed! Reload to Renter Password';
-document.getElementById("myDIV").style.opacity = "0.5";
-}else{
-alert('Success');
-}
-}
-run();
+<script language="javascript">
+function pasuser(form) { 
+if (form.id.value=="urmom") { 
+if (form.pass.value==("urdad") { location="http://YOURDOMAIN.com/" } 
+else { alert("Wrong Password") } 
+} 
+else { alert("Wrong Username") } 
+} 
 </script>
-<div id="myDIV">
+<form name="login">
+Username: < input name="id" size="6" type="text">
+Password: < input name="pass" size="6" type="password">
+<input value="Login" onclick="pasuser(this.form)" type="button">
+</form>
 <p>
 chrome-extension://haldlgldplgnggkjaafhelgiaglafanh/manifest.json
 </p>
@@ -26,5 +25,4 @@ chrome://hang
 Use this to bypass firewalls if they are blocking instead of goguardian:
 https://us1.deblocc.uk/
 </p>
-</div>
 </html>
