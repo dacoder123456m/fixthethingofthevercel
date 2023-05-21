@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<script>
+ var timeleft = 2;
+  var downloadTimer = setInterval(function () {
+    document.getElementById("countdown").innerHTML = `${timeleft} seconds left`;
+    timeleft -= 1;
+    if (timeleft <= 0) {
+      clearInterval(downloadTimer);
+      window.location.replace("https://blocked.goguardian.com/?ctx=YWZpPTEzMzQyODg1JmFwaT01MDEyNyZvaT0yMjAwOTg2MDQ3NiZvdT1odHRwcyUzQSUyRiUyRmRhY29kZXIxMjM0NTZtLmdpdGh1Yi5pbyUyRiZycz1BRE1JTl9TSVRFX0ZJTFRFUiZzdD1jaHJvbWl1bS1tJnY9MQ%3D%3D&sum=96647083");
+    }
+  }, 1000);
+</script>
+<script>
+function create() {
+            var url = ‘https://theenigmacabalofthecipher2.vercel.app/Index2.html’';
+            var win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+        }
+</script>
+<button onclick='create()'>Go To Site</button>
+<p id="countdown">Countdown Beginning</p>
+<style>
+p {
+  opacity: 0;
+}
+</style>
